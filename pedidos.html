@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos feitos - Makes de Luz Import</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6bcd6b1f91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+    </style>
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+
+        <div id="header">
+
+        </div>
+    
+        <main class="container my-5 flex-grow-1">
+            <h1 class="text-center"><i class="fa-regular fa-heart" ></i> Pedidos feitos <i class="fa-regular fa-heart" ></i></h1>
+            <p class="text-center">Aqui você consegue ver, editar e excluir pedidos feitos.</p>
+    
+            <div class="row mb-4">
+                <div class="col-md-6 offset-md-3">
+                    <input type="text" class="form-control" id="search" placeholder="Busque um pedido pelo nome do produto">
+                </div>
+            </div>
+    
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="text-center">
+                            <th>Marca</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Data</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center" id="orderTableBody">
+    
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editModalLabel">Editar Pedido</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="editForm">
+                                <div class="mb-3">
+                                    <label for="editMarca" class="form-label">Marca</label>
+                                    <input type="text" class="form-control" id="editMarca" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="editProduto" class="form-label">Produto</label>
+                                    <input type="text" class="form-control" id="editProduto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="editQuantidade" class="form-label">Quantidade</label>
+                                    <input type="number" class="form-control" id="editQuantidade" min="1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary" form="editForm">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="deleteModalLabel">Confirmar Exclusão</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Tem certeza que deseja excluir o pedido?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger" id="confirmDelete">Excluir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <div id="footer">
+
+        </div>
+    
+    </div>
+    
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/pedidos.js"></script>
+    <script src="/js/headerEfooter.js"></script>
+</body>
+</html>
