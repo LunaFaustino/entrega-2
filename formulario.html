@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Makes de Luz Import</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6bcd6b1f91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+    </style>
+    
+</head>
+<body>
+    <div class="d-flex flex-column min min-vh-100">
+
+        <div id="header">
+        </div>
+
+        <main class="container my-5 flex-grow-1">
+            <h1 class="text-center"><i class="fa-regular fa-heart" ></i> Makes de Luz Import <i class="fa-regular fa-heart" ></i></h1>
+            <p class="text-center">Interessado em maquiagens importadas que não consegue encontrar no BR? Importamos para você!</p>
+    
+            <h2 class="text-center mt-4">Faça seu pedido</h2>
+            <form action="pedidos.html" method="post" class="row g-3">
+
+                <div class="alert alert-success alert-dismissible fade" role="alert" id="successMessage" style="display: none; background-color: #ffc0cb;">
+                    Pedido feito com sucesso! Entraremos em contato com o orçamento ^^
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+    
+                <h3>Dados do produto</h3>
+                <div class="col-12 mb-1">
+                    <label for="marca" class="form-label">Marca</label>
+                    <input type="text" id="marca" name="marca" class="form-control" placeholder="ex: Fenty" required>
+                </div>
+                <div class="col-12 mb-1">
+                    <label for="produto" class="form-label">Produto</label>
+                    <input type="text" id="produto" name="produto" class="form-control" placeholder="ex: Batom" required>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="quantidade" class="form-label">Quantidade</label>
+                    <input type="number" id="quantidade" name="quantidade" class="form-control" placeholder="ex: 2" min="1">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Enviar pedido!</button>
+                </div>
+            </form>
+        </main>
+    
+        <div id="footer">
+
+        </div>
+    
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/headerEfooter.js"></script>
+</body>
+</html>
