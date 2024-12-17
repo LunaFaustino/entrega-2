@@ -1,0 +1,110 @@
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+
+
+header nav ul li a{
+    font-size: 1.2rem !important;
+}
+
+header i{
+    margin-top: 04px;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    color: #ffc0cb;;
+}
+
+.fa-heart:hover {
+    animation: pulse 1s infinite;
+    display: inline-block;
+}
+
+.alert {
+    font-size: 1.2rem;
+    
+}
+
+form .form-control {
+    font-size: 1.2rem;
+    border: 2px solid #ffc0cb;
+    border-radius: 8px;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #ff4e6b;
+    box-shadow: 0 0 0 0.25rem rgba(252, 159, 175, 0.5);
+    outline: none;
+}
+
+form label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn {
+    font-size: 1.3rem;
+    background-color: #ffc0cb;
+    color: black;
+    border: #fc9faf;
+}
+
+.btn:hover {
+    background-color: #fc9faf;
+    color: black;
+}
+
+.btn:active, btn:focus {
+    background-color: #ff4e6b !important;
+    box-shadow: 0 0 0 0.25rem rgba(252, 159, 175, 0.5) !important;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+footer p{
+    font-size: 1.1rem;
+}
+
+footer h5{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+}

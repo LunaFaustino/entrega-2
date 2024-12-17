@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${pedido.data}</td>
                 <td>
                     <button class="btn btn-sm btn-primary edit-btn" data-id="${pedido.id}">
-                        <i class="fa-solid fa-pen-to-square" style="color: blue;"></i>
+                        <i class="fa-solid fa-pen-to-square" style="color: white;"></i>
                     </button>
                     <button class="btn btn-sm btn-danger delete-btn" data-id="${pedido.id}">
-                        <i class="fas fa-trash" style="color: red;"></i>
+                        <i class="fas fa-trash" style="color: white;"></i>
                     </button>
                 </td>
             `;

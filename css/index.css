@@ -1,0 +1,156 @@
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+header nav ul li a{
+    font-size: 1.2rem !important;
+}
+
+header i{
+    margin-top: 04px;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    color: #ffc0cb;;
+}
+
+.fa-heart:hover {
+    animation: pulse 1s infinite;
+    display: inline-block;
+}
+
+.fa-square-check{
+    color: #ff4e6b;
+}
+
+#carouselExample {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel {
+    justify-self: center !important;
+    min-height: 300px;
+    width: 90vw;
+}
+
+.carousel-inner{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.carousel-item img {
+    max-height: 300px; 
+    object-fit: contain; 
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
+#testimonialsCarousel {
+    width: inherit;
+    min-height: 150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 a{
+    color: #ff4e6b;
+    text-decoration: none;
+    font-weight: bold;
+    animation: pulse 1s infinite;
+    display: inline-block;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.9rem;
+    justify-self: center;
+}
+
+h5{
+    font-size: 1.5rem;
+    justify-self: center;
+}
+
+section.container{
+    padding-top: 15px;
+}
+
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ffc0cb;
+    border-radius: 15px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 4px 6px rgba(255, 78, 107, 0.3);
+}
+
+section article{
+    justify-self: center;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+strong{
+    font-size: 1.3rem;
+}
+
+ul li{
+    justify-self: center;
+    font-size: 1.3rem;
+}
+
+footer p{
+    font-size: 1.1rem;
+}
+
+footer h5{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
