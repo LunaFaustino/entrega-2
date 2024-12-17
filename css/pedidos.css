@@ -1,0 +1,166 @@
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+header nav ul li a{
+    font-size: 1.2rem !important;
+}
+
+header i{
+    margin-top: 04px;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    color: #ffc0cb;;
+}
+
+.fa-heart:hover {
+    animation: pulse 1s infinite;
+    display: inline-block;
+}
+
+#search {
+    border: 1px solid #ffc0cb;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0 0.25rem rgba(252, 159, 175, 0.5);
+}
+
+#search:focus {
+    border-color: #ff4e6b;
+    box-shadow: 0 0 0 0.25rem rgba(252, 159, 175, 0.5);
+    outline: none;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    font-size: 1.2rem;
+}
+
+.table td{
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #ffc0cb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff4e6b;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+}
+
+.btn-action {
+    font-size: 0.9rem;
+    margin: 0 3px;
+    padding: 5px 10px;
+}
+
+.modal-content {
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body{
+    font-size: 1.2rem;
+}
+
+.modal-body label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modal-body .form-control {
+    font-size: 1.1rem;
+    padding: 10px 12px;
+    border: 2px solid #ffc0cb; 
+    border-radius: 8px;
+}
+
+.modal-body .form-control:focus {
+    border-color: #ff4e6b;
+    box-shadow: 0 0 0 0.25rem rgba(252, 159, 175, 0.5);
+    outline: none;
+}
+
+.modal-footer .btn {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.modal-footer .btn-primary {
+    background-color: #ffc0cb;
+    border: none;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #ff4e6b;
+}
+
+.modal-footer .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.modal-footer .btn-danger:hover {
+    background-color: #bd2130; 
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+footer p{
+    font-size: 1.1rem;
+}
+
+footer h5{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
