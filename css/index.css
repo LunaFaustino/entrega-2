@@ -44,8 +44,17 @@ i {
     color: #ff4e6b;
 }
 
+#carouselExample {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .carousel {
-    justify-self: center;
+    justify-self: center !important;
     min-height: 300px;
     width: 90vw;
 }
