@@ -1,4 +1,4 @@
-# Entrega-2
+# Formulário Responsivo com uso de API e CRUD
 
 ### Repositório criado para a entrega do segundo projeto da Formação de Trainee
 
